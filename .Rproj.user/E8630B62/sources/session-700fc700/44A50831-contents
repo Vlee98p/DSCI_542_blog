@@ -1,0 +1,197 @@
+---
+title: "DSCI 542 Lab 1"
+subtitle: "Communicating in Data Science"
+format: 
+  pdf: 
+    toc: true
+    toc-depth: 3
+    theme: cosmo
+  html:
+    toc: true
+    toc-depth: 3
+    theme: cosmo
+---
+
+## Lab Assignment Instructions
+
+In this course, we are using a labor-based grading approach. This means that each task in the lab is graded based on completion rather than evaluation of quality. If a question is completed according to the specifications provided such as meeting the word limit, following the required format, or staying within the allotted time you will receive full credit for that question.
+
+When submitting your lab, please be sure to:
+
+-   Include link to your GitHub repository containing your work. <https://github.ubc.ca/mds-2025-26/DSCI_542_lab1_vlee98>
+
+-   Submit a the `.qmd` file along with a rendered version (either `.html` or `.pdf`) of your lab to Gradescope.
+
+-   On Canvas, submit the link to your GitHub repository containing your work for peer review.
+
+## Question 1: Asking the right questions (12 pts)
+
+rubric = {completion: 12}
+
+An essential part of communication in data science is asking the 'right' questions. A good question should stem from a real business problem and reflect the direction of the analysis. As you will see later on in capstone projects, you will be often put in a situation where you need to translate a client's business interests into a concrete & specific question that determine the direction of the whole project. For example, the client might want to **describe** some existing patterns in the data, or they want to **make inference** to a wider population, or they want to **predict** some outcomes, or they might want to understand if certain interventions have a **causal impact** on some outcomes. You will need to read between the lines and identify what the client's interests are to formulate a meaningful question.
+
+In this exercise, you will be formulating different types of questions (**descriptive, inferential, prediction, causal**) to given problems.
+
+| **Type** | **Description** | **Question** |
+|------------------------|------------------------|------------------------|
+| Exploratory | A question that asks if there are patterns, trends, or relationships within a single data set. Often used to propose hypotheses for future study. | Does political party voting change with indicators of wealth in a set of data collected on 2,000 people living in Canada? |
+| Predictive | A question that asks about predicting measurements or labels for individuals (people or things). The focus is on what things predict some outcome, but not what causes the outcome. | What political party will someone vote for in the next Canadian election? |
+| Inferential | A question that looks for patterns, trends, or relationships in a single data set and also asks for quantification of how applicable these findings are to the wider population. | Does political party voting change with indicators of wealth for all people living in Canada? |
+| Causal | A question that asks about whether changing one factor will lead to a change in another factor, on average, in the wider population. | Does wealth lead to voting for a certain political party in Canadian elections? |
+
+> Source: https://datasciencebook.ca/intro.html#asking-a-question
+
+For questions 1.1-1.3, FORMAT YOUR ANSWER LIKE THIS:
+
+| Type        | Question |
+|-------------|----------|
+| Exploratory |          |
+| Predictive  |          |
+| Inferential |          |
+| Causal      |          |
+
+#### 1.1 Problem 1: Real estate marketing
+
+A digital real estate marketing firm is hiring you as a data science consultant. It offers a comprehensive list of for-sale properties, as well as the information and tools to make informed real estate decisions.
+
+Return users are consumers who visit their website more than once. They may return for a variety of reasons such as to discover new homes, search for open houses, know about price reductions, check changes in status of previous homes of interest. These consumers form a very important segment of users since these are the ones we can expect to take more interest in our brand, be more engaged, loyal and, finally convert to a lead.
+
+In this project we seek to build a data science/machine learning framework to find users that are likely to return and to develop strategies to encourage them to return to our website.
+
+**ANSWER**:
+
+| Type | Question |
+|---------------------------|---------------------------------------------|
+| Exploratory | Do users engage with time-sensitive for-sale properties (open house, price reductions) return more often than users who view non-time-sensitive properties (standard properties listings)? |
+| Predictive | How many days does it take for a user to return after viewing a time-sensitive property listing? |
+| Inferential | Does viewing a higher number of time-sensitive property listings increase the number of return users? |
+| Causal | Does increasing properties with price reduction causes users to return more frequently to check the status updates on properties? |
+
+#### 1.2 Problem 2: Sport analytics
+
+A professional basketball team is hiring you as a data science consultant. A primary mandate of this team is to inform decisions across several areas of Basketball Operations, including decisions about athletes’ physical preparation, injury prevention, return to sport, player identification/scouting, performance analysis, and opposition scouting.
+
+The team collects a large amount of optical tracking data that records the x/y coordinates of all players and the ball at a frequency of 25 frames per second, while the event data records “on-ball” actions throughout the course of a match such as passes, shots.
+
+In this project, we seek to apply a data science framework to enhance our players performance and develop effective squad formations that increase our chance of winning games.
+
+**ANSWER**:
+
+| Type | Question |
+|--------------------------|----------------------------------------------|
+| Exploratory | Do players who make more than 5 passes per game get injury more frequently? |
+| Predictive | How many points would a team score if all five players are high performance players? |
+| Inferential | Do players' physical preparation level affect the number of passes and shots they make per game? |
+| Causal | Does having a player with lower basketball IQ cause the team to score less points per game? |
+
+#### 1.3 Problem 3: Learning analytics
+
+Coursera is hiring you as a data science consultant. The company collects a large amount of event log data from learning management systems, in addition to academic records and personal information. Suppose that while these massive open online courses (MOOCs) have large enrollment, the completion rate has been observed to be rather small.
+
+In this project, we are interested in identifying students who are at-risk of dropping out their course and how can we better retain these students.
+
+**ANSWER**:
+
+| Type | Question |
+|---------------------------|---------------------------------------------|
+| Exploratory | Do student's performance in the first week of the course along with the course's difficulty level tend to drop out of their course? |
+| Predictive | What is the probability of a student dropping out of the course after failing the first quiz? |
+| Inferential | Does a lower course average associate with a higher number of student dropping out of the course? |
+| Causal | Does having tutorial session cause a lower number of students dropping out of the course? |
+
+## Question 2: Outlining (6 points)
+
+rubric = {completion: 6}
+
+In this course, we will spend a lot of time reflecting on how to clearly communicate ideas in data science. To begin, we would like you to choose any data science topic that interests you and create an outline for a short presentation on that topic.
+
+At this stage, do not worry about making the outline perfect. For now, the goal is simply to sketch out the main sections and points you would include if you were giving a presentation about this topic.
+
+> *Note: Please think carefully about the topic you choose. This choice matters because it will not only shape the outline you create now, but will also be woven into different parts of the course as we practice communication skills. In fact, there’s a strong chance that the topic you select here will become the foundation for the presentation you deliver later.*
+
+**Topic**: How to spot fake stingless bee honey (SBH) with data science
+
+**The problem**: Consumers purchase ‘pure’ stingless bee honey at a premium price for it’s health benefits but companies often dilute the honey with water/vinegar to mimic the taste to scam customers.
+
+-   Hook: "How many people do you think can distinguish real honey and fake honey?"
+
+-   My claim: data science can spot fake honey and measure how much water/vinegar were added.
+
+**The solution**: Identify the issue by the light fingerprint scanner and pattern-spotting software
+
+-   Methods: Near-Infrared Spectroscopy (NIRS) + Chemometrics
+
+    -   Uses high-quality SBHs from the northern part of Malaysia
+
+    -   This method uses the light beam ( a range of invisible light wavelengths) to shine into the honey smaple to observe the vibration of different molecules. Different molecules react different to the light beam
+
+    -   It measures the amount of energy gets through the honey at each colour and populates a wavy-line graph. These are our sample data
+
+    -   Feed in thousands of sample data and use chemometrics to learn the hidden patterns using PCA-LDA and PLSR models
+
+    -   Not only identify pure or fake, it also measures how much water/apple cider vinegar was added
+
+**Results & Takeaway**: Data science can identify fake honey and fight food fraud so that customers can purchase with confidence.
+
+-   Achieve 99% accuracy in identifying pure and fake honey
+
+-   Customers purchases honey with more confidence
+
+-   Protects the beekeepers as they can prove their product's purity when companies want to undercut them
+
+## Question 3: Explain complex concepts to non-technical audience (10 points)
+
+rubic = {completion: 20}
+
+Explaining complex data science concepts to non-technical audience is a valuable skills set for any data scientists. By doing so, you can clearly communicate the results of their analysis and the insights they have gained, helping non-technical audiences to **understand the significance and implications of their work**. By writing clearly and concisely, data scientists can ensure that their ideas and insights are understood by their colleagues and that they can **work together effectively**. Finally, it can help you **build credibility and trust with your colleagues**, and demonstrate the value and relevance of your work.
+
+Here are some tips for effective writing data science communication:
+
+-   **Be clear and concise**: Avoid using jargon or overly technical language, and aim to explain concepts in a simple and straightforward manner.
+-   **Use examples**: Illustrate your points with examples or case studies to help make the material more relatable and easier to understand.
+-   **Break down complex concepts** If you are explaining a complex concept, break it down into smaller, more manageable pieces and explain each piece separately.
+-   **Use visual aids**: Use charts, graphs, or other visual aids to help clarify and illustrate your points.
+-   **Ask for feedback**: Review your writing carefully to ensure that it is accurate and well-organized, and ask for feedback from others if needed.
+
+In this exercise, you are tasked to explain your topic of choice to a non-technical audience (a type of activity that you will find yourself doing frequently later on when you work as a data scientist). For this exercise, you should be aiming for a character count of around 2500 (+ or - 500) characters, not including code, captions, references, etc. Please consider the amount of time it will take your audience to read your post (about 5-10 minutes). Consider the following points before diving into your write-up:
+
+-   Identify and highlight technical jargon and complex terms that might not be easy to understand by non-technical audiences. Please keep in mind the audience that you are writing for.
+-   Refine the outline for your write-up.
+-   Rewrite and explain the concept in a clear and concise way, creating additional visual aids if necessary.
+
+### How Data Science Spots Fake Stingless Bee Honey
+
+Have you ever wondered if an expensive jar of “pure” honey is 100% genuine? How are you confident that you are getting what you paid for? When it comes to stingless bee honey (a rare, expensive honey due to its unique health benefits), some companies dilute it with other substances like water or apple cider vinegar to mimic the taste while marketing it as “pure”. Our senses cannot spot the difference, but modern data science can. The solution involves two key tools working together: a scanner to gather sample data, and the use of chemometrics and machine learning to analyze and identify hidden patterns of fraud.
+
+**The Raw Data**
+
+A light fingerprint scanner (scientifically known as Near-Infrared Spectroscopy) is used to collect the raw data. It is a scanner that shines an invisible light bean through the honey and observes each molecule’s (water, sugar, vinegar etc.) reaction. Each molecule in the honey absorbs colours of the light spectrum differently; the scanner measures the strength of each colour after it hits the molecule. If a molecule in the honey has absorbed a particular colour, the scanner will register as weak in the scanner. The scanner produces a detailed graph after recording the strength of the entire spectrum. The graph is known as the ‘Light Fingerprint’.
+
+**The Analysis**
+
+After the data is collected, they are used in a set of machine learning algorithm to learn and explain the meaning of the learned patterns. Two main models are used: a classifier (PCA-LDA) and a quantifier (PLSR). The process begins with cleaning the thousands of data from the ‘Light Fingerprint’ by extracting a smaller set of the most important patterns. This converts messy data into a simpler set of data to focus on. This process is known as Principal component Analysis (PCA). Then, the cleaned dataset is fed into the classifier model. It sorts data and places it into categories labels: Pure, Adulterated with Water, and Adulterated with Apple Cider Vinegar. Lastly, a quantifier (PLSR) is then used to measure the percentage of water or apple cider vinegar was added into the honey. Once trained, this can analyze new honey rapidly.
+
+**Results & Takeaway**
+
+Research applied this method to Malaysian stingless bee honey and achieved 100% accuracy in detecting fraud and can also produce the adulteration levels with high precision. This method shows how modern data science effectively tackles food fraud, specifically to stingless bee honey – a rare and expensive superfood. With a simple light scanner and trained algorithm, it provides the truth when our senses are unreliable. This allows customers to purchase premium honey with confidence instead of blindly believing the marketing labels on the jar. The method also protect the beekeepers with proofs that their honey is 100% pure. The next time you choose a premium product, know that science is working to ensure its label tells the truth.
+
+**Reference:**
+
+Raypah, M. E., Zhi, L. J., Lim, L. Z., & Omar, A. F. (2022, May 15). *Near-infrared spectroscopy with chemometrics for identification and quantification of adulteration in high-quality stingless bee honey*. ScienceDirect.
+
+https://www.sciencedirect.com/science/article/pii/S016974392200051X#sec4
+
+## Peer Feedback (to be completed next week)
+
+After the submission deadline, you will review your group member's write ups.
+
+Peer review allows you to receive feedback on your writing from multiple peers, which help you see your work more objectively and identify areas where they can revise and improve their writing. It also fosters a sense of community and a safe environment to collaborate and help each other with constructive feedback.
+
+Read the write-ups from Question 3 carefully, paying attention to the content, organization, and style of the writing. Consider the following questions as you review:
+
+-   Is the content of the write-up accurate and well-researched?
+-   Is the structure of the write-up clear and logical?
+-   Are the ideas in the write-up effectively communicated and easy to understand?
+-   Is the writing style of the write-up engaging and appropriate for the audience?
+
+Write a review for each of the write-ups, addressing the above questions and any other issues you feel are relevant. Use specific examples to support your points. Reviews should be **at least 250 words** in length. Please be sure your feedback is positive, constructive, and focused on helping your peers strengthen their work.
