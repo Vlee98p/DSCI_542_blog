@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -153,7 +173,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#data-collection" id="toc-data-collection" class="nav-link" data-scroll-target="#data-collection">Data Collection</a></li>
   <li><a href="#the-analysis" id="toc-the-analysis" class="nav-link" data-scroll-target="#the-analysis">The Analysis</a></li>
   <li><a href="#results-takeaway" id="toc-results-takeaway" class="nav-link" data-scroll-target="#results-takeaway">Results &amp; Takeaway</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
     </div>
@@ -191,15 +210,16 @@ ul.task-list li input[type="checkbox"] {
 <section id="results-takeaway" class="level3">
 <h3 class="anchored" data-anchor-id="results-takeaway">Results &amp; Takeaway</h3>
 <p>The PCA-LDA model achieved 100 % accuracy on distinguishing pure and adulterated stingless bee honey. The PLSR model is able to accurately quantify the percentage of adulteration with high correlation coefficients (~0.993) and low errors (RMSECV = 1.686%). This indicates the model’s reliability. The goal of this research is to demonstrate data science tools can detect and measure fake honey. This research provides the truth when our senses are unreliable. The model performed with high accuracy with stingless bee honey; imagine the other products we can apply this method to. With this truth, it allows customers to purchase premium stingless bee honey with confidence and protect the beekeepers by showing the authenticity if their honey. The next time you choose a premium product, know that science is working to ensure its label tells the truth.</p>
-</section>
-<section id="references" class="level3">
-<h3 class="anchored" data-anchor-id="references">References</h3>
-<p>Raypah, M. E., Zhi, L. J., Lim, L. Z., &amp; Omar, A. F. (2022, May 15). <em>Near-infrared spectroscopy with chemometrics for identification and quantification of adulteration in high-quality stingless bee honey</em>. ScienceDirect. <a href="https://www.sciencedirect.com/science/article/pii/S016974392200051X#sec4" class="uri">https://www.sciencedirect.com/science/article/pii/S016974392200051X#sec4</a></p>
+
 
 
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-RAYPAH2022104540" class="csl-entry" role="listitem">
+Raypah, Muna E., Loh Jing Zhi, Lim Zi Loon, and Ahmad Fairuz Omar. 2022. <span>“Near-Infrared Spectroscopy with Chemometrics for Identification and Quantification of Adulteration in High-Quality Stingless Bee Honey.”</span> <em>Chemometrics and Intelligent Laboratory Systems</em> 224: 104540. https://doi.org/<a href="https://doi.org/10.1016/j.chemolab.2022.104540">https://doi.org/10.1016/j.chemolab.2022.104540</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
