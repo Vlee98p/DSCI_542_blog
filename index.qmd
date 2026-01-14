@@ -43,9 +43,9 @@ Once sample data is collected, they are systematically labeled by the source and
 
 This analysis will be focusing on two measurements: Brix and Acidity.
 
--    Brix measures the level of sugar and concentration in a liquid. Think of it as sweetness. Higher brix means more sugar which indicates the liquid is sweeter. Alternatively, lower brix means less sugar which indicates the liquid is less sweet.
+-   Brix measures the level of sugar and concentration in a liquid. Think of it as sweetness. Higher brix means more sugar which indicates the liquid is sweeter. Alternatively, lower brix means less sugar which indicates the liquid is less sweet.
 
--    Acidity measures using a standard pH meter. Think of it as sourness. High acidity indicates very sour while low acidity indicates dullness.
+-   Acidity measures using a standard pH meter. Think of it as sourness. High acidity indicates very sour while low acidity indicates dullness.
 
 ### Data Cleaning
 
